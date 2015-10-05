@@ -1,5 +1,5 @@
-function () {
+var print = function () {
   console.log("Hello world");
 };
 
-function()
+print ()

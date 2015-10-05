@@ -29,3 +29,26 @@ def fizzbuzz(max)
 end
 
 fizzbuzz(100)
+
+
+def pigatize(text)
+  if starts_with_vowel?(text)
+    @text << @text.chars.first + 'way'
+  else
+    @text.chars.rotate.join << 'ay' #only add first letter when starts with vowel
+  end
+end
+
+def starts_with_vowel?(text)
+  if @text.match(/^[aeyiuo]/)
+  true
+  end
+end
+
+loop do
+  break if @text.length == 0 # Break out of the loop if I say nothing
+  puts pigatize(@text)
+end
+
+pigatize("Helloworld")
+
