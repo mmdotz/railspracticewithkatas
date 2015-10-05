@@ -23,7 +23,7 @@ def fizzbuzz(max)
     elsif (n % 5).zero?
       puts "buzz"
     else
-        puts n
+      puts n
     end
   end
 end
